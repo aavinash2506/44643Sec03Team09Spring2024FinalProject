@@ -1,16 +1,17 @@
-# Task Manager App
+# Scribble Game
 
 ## Overview
-This task manager app is designed to help users organize their day-to-day activities efficiently. Users can register, log in securely, and manage their tasks through an intuitive interface.
+The primary objective of the Scribble game app is to provide an entertaining and interactive platform where players can connect through drawing and guessing games. The app aims to foster creativity, improve drawing skills, and enhance social connections among users by allowing them to challenge each other in guessing drawings. It offers a seamless and engaging experience that encourages frequent play.
 
 ## Target Users
-The target users of the task manager app are professionals and students seeking efficient organization of work or academic tasks, as well as individuals, such as entrepreneurs, parents, and creatives, aiming to enhance personal productivity by managing daily activities effectively.
+The scribble game targets young adults and teenagers highly engaged with mobile games and social media, families seeking fun, interactive bonding activities, casual gamers desiring a simple yet entertaining pastime, and creative individuals looking to enhance their drawing skills in a playful, competitive environment.
 
 ### Features
-- **Registration Page:** Users can register for an account.
-- **Login Page:** Secure user authentication for logging in.
-- **Home Page:** Dashboard displaying task overview, pending tasks, completed tasks, and options to add new tasks.
-- **Profile Page:** View user details.
+- **Registration Page:** Enables new users to create an account, providing access to the game and its community.
+- **Login Page:** Offers secure authentication for users to access their accounts, ensuring privacy and security.
+- **Drawing Interface:** A feature-rich canvas where drawers can unleash their creativity using various tools and colors.
+- **Guessing Interface:** A real-time guessing area for guessers to type their guesses.
+- **Leaderboards:** Displays rankings of players based on their game performance, encouraging a competitive spirit.
 
 ### Roles and Responisibilities
 - **Vaishnavi Varaganti:** will work on backend
