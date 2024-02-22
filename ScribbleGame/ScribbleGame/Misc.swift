@@ -8,7 +8,7 @@
 import UIKit
 import Foundation
 
-let everyDayObjects = 
+let everyDayObjects =
 [
     "acrylic paints", "alarm clock", "backpack", "battery", "bed", "bicycle", "binder", "blanket", "book",
     "bookshelf", "broom", "bus", "calculator", "calendar", "camera", "candle", "canvas", "car", "chair",
