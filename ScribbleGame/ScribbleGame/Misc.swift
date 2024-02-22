@@ -33,3 +33,12 @@ enum PlayerAuthState: String {
     case error = "There was an error logging into Game Center."
     case restricted = "You're not allowed to play multiplayer games!"
 }
+
+struct PastGuess: Identifiable {
+    let id = UUID()
+    var message: String
+    var correct: Bool
+}
+
+let maxTimeRemaining = 100
+
