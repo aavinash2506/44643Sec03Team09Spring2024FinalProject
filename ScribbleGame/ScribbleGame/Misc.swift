@@ -25,3 +25,11 @@ let everyDayObjects =
     "train", "trash can", "tv", "umbrella", "vacuum cleaner", "wallet", "washing machine", "watch", "water bottle",
     "watercolor set", "whiteboard", "wrench", "yoga mat"
 ]
+
+enum PlayerAuthState: String {
+    case authenticating = "Logging in to Game Center..."
+    case unauthenticated = "Please sign in to Game Center to play."
+    case authenticated = ""
+    case error = "There was an error logging into Game Center."
+    case restricted = "You're not allowed to play multiplayer games!"
+}
