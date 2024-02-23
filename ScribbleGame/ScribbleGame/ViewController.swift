@@ -16,8 +16,8 @@ class ViewController: UIViewController {
             scribbleLAV.animationSpeed = 1.0
             scribbleLAV.play{[weak self] _ in
                           UIViewPropertyAnimator.runningPropertyAnimator(
-                              withDuration: 1.0,
-                              delay: 0.0,
+                              withDuration:1.0,
+                              delay:0.0,
                               options: [.curveEaseInOut]){
                               self?.scribbleLAV.alpha=0.0
                           }
