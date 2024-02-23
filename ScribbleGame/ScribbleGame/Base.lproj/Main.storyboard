@@ -108,6 +108,11 @@
                                     <constraint firstItem="TNP-zi-PP9" firstAttribute="height" secondItem="GTf-1w-JpS" secondAttribute="height" multiplier="0.5" id="D0S-0R-RdJ"/>
                                 </constraints>
                             </stackView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MwS-JD-nHz" userLabel="LaunchLAV">
+                                <rect key="frame" x="76" y="362" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
