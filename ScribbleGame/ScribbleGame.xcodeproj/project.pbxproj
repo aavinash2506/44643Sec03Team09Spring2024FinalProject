@@ -14,6 +14,8 @@
 		AAA46A322B870F220099BED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAA46A312B870F220099BED3 /* Assets.xcassets */; };
 		AAA46A352B870F220099BED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAA46A332B870F220099BED3 /* LaunchScreen.storyboard */; };
 		AAA46A412B8716720099BED3 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA46A402B8716720099BED3 /* Misc.swift */; };
+		AAC7575C2B9A5BF2002084F1 /* skribbleGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = AAC7575B2B9A5BF2002084F1 /* skribbleGIF.gif */; };
+		AAC7575F2B9A6830002084F1 /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC7575E2B9A6830002084F1 /* MatchManager.swift */; };
 		FD7080752B8952DE00FA063D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FD7080742B8952DE00FA063D /* Lottie */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +29,8 @@
 		AAA46A342B870F220099BED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAA46A362B870F220099BED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AAA46A402B8716720099BED3 /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		AAC7575B2B9A5BF2002084F1 /* skribbleGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = skribbleGIF.gif; sourceTree = "<group>"; };
+		AAC7575E2B9A6830002084F1 /* MatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,11 +69,21 @@
 				AAA46A2C2B870F200099BED3 /* ViewController.swift */,
 				AAA46A2E2B870F200099BED3 /* Main.storyboard */,
 				AAA46A312B870F220099BED3 /* Assets.xcassets */,
+				AAC7575D2B9A5BF9002084F1 /* GIFs */,
 				AAA46A332B870F220099BED3 /* LaunchScreen.storyboard */,
 				AAA46A362B870F220099BED3 /* Info.plist */,
 				AAA46A402B8716720099BED3 /* Misc.swift */,
+				AAC7575E2B9A6830002084F1 /* MatchManager.swift */,
 			);
 			path = ScribbleGame;
+			sourceTree = "<group>";
+		};
+		AAC7575D2B9A5BF9002084F1 /* GIFs */ = {
+			isa = PBXGroup;
+			children = (
+				AAC7575B2B9A5BF2002084F1 /* skribbleGIF.gif */,
+			);
+			path = GIFs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +153,7 @@
 				AAA46A352B870F220099BED3 /* LaunchScreen.storyboard in Resources */,
 				AAA46A322B870F220099BED3 /* Assets.xcassets in Resources */,
 				AAA46A302B870F200099BED3 /* Main.storyboard in Resources */,
+				AAC7575C2B9A5BF2002084F1 /* skribbleGIF.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +167,7 @@
 				AAA46A2D2B870F200099BED3 /* ViewController.swift in Sources */,
 				AAA46A412B8716720099BED3 /* Misc.swift in Sources */,
 				AAA46A292B870F200099BED3 /* AppDelegate.swift in Sources */,
+				AAC7575F2B9A6830002084F1 /* MatchManager.swift in Sources */,
 				AAA46A2B2B870F200099BED3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

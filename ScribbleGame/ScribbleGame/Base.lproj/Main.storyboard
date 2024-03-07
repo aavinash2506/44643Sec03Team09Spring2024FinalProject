@@ -75,7 +75,7 @@
                                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="LoginBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OvF-Yd-cPQ"/>
+                                                            <segue destination="yR7-of-Ucg" kind="show" identifier="login" id="Zax-Ja-omz"/>
                                                         </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u8P-H3-EPC" userLabel="ActionSV">
@@ -111,7 +111,7 @@
                                     <constraint firstItem="TNP-zi-PP9" firstAttribute="height" secondItem="GTf-1w-JpS" secondAttribute="height" multiplier="0.5" id="D0S-0R-RdJ"/>
                                 </constraints>
                             </stackView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwS-JD-nHz" userLabel="LaunchLAV" customClass="LottieAnimationView" customModule="Lottie">
+                            <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MwS-JD-nHz" userLabel="LaunchLAV" customClass="LottieAnimationView" customModule="Lottie">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
@@ -143,6 +143,22 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="956.48854961832058" y="3.5211267605633805"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="bGI-J5-E7I">
+            <objects>
+                <viewController id="yR7-of-Ucg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4Nq-fO-zq5">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rOs-kf-vgB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qH2-tj-omt"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Kk-rF-c4d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2021" y="18"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="MMo-MT-q8R">
