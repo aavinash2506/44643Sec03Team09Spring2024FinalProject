@@ -74,6 +74,9 @@
                                                         <buttonConfiguration key="configuration" style="filled" title="Login" cornerStyle="dynamic">
                                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
                                                         </buttonConfiguration>
+                                                        <connections>
+                                                            <action selector="LoginBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OvF-Yd-cPQ"/>
+                                                        </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u8P-H3-EPC" userLabel="ActionSV">
                                                         <rect key="frame" x="50.666666666666657" y="90.333333333333371" width="272" height="37.333333333333343"/>
@@ -131,6 +134,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="c67-hF-nht"/>
                     <connections>
+                        <outlet property="LoginBTN" destination="lTW-JS-cUf" id="tgk-IM-7d5"/>
+                        <outlet property="PasswordTF" destination="wyf-fb-jPc" id="9VI-iF-F5d"/>
+                        <outlet property="UserTF" destination="eL5-Z8-FB9" id="pMo-1O-hIZ"/>
                         <outlet property="scribbleLAV" destination="MwS-JD-nHz" id="utD-kY-dG7"/>
                     </connections>
                 </viewController>

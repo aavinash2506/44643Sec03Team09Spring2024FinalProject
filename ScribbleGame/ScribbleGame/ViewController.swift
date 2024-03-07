@@ -10,6 +10,17 @@ import Lottie
 
 class ViewController: UIViewController {
     
+    
+    @IBOutlet weak var UserTF: UITextField!
+    
+    @IBOutlet weak var PasswordTF: UITextField!
+    
+    @IBOutlet weak var LoginBTN: UIButton!
+    
+    @IBAction func LoginBTN(_ sender: UIButton) {
+    }
+    
+    
     @IBOutlet weak var scribbleLAV: LottieAnimationView!{
         didSet{
             scribbleLAV.loopMode = .playOnce
