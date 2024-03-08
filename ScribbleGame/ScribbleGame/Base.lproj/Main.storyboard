@@ -250,7 +250,7 @@
                                                                     <action selector="firstname:" destination="hPa-Qw-jvu" eventType="editingDidEnd" id="EXV-pV-FTh"/>
                                                                 </connections>
                                                             </textField>
-                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER LAST NAME" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mSz-5I-XKg">
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter last name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mSz-5I-XKg">
                                                                 <rect key="frame" x="0.0" y="38.333333333333343" width="353" height="30.333333333333329"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <textInputTraits key="textInputTraits"/>
