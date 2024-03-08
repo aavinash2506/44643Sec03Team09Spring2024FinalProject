@@ -18,3 +18,16 @@ The scribble game targets young adults and teenagers highly engaged with mobile 
 - **Avinash Vengalasetti:** will work on backend
 - **Tejesh Reddy Veeramreddy:** will work on UI
 - **Venkata Sai Sandeep Nirujogi:** will work on UI
+
+### Completed Tasks
+- Created GitHub repository
+- Decided project objective
+- Updated Readme file with the required details
+- Created Project WBS
+- Created a wiki for the repository with the required information
+- Created UI Prototypes
+- Decided on the navigation among various screens
+- Created the UI for Login page
+- Created the UI for Registration page
+- Created the UI for Home page
+- Created the UI for Game over page
