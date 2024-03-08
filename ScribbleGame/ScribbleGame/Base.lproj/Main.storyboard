@@ -76,9 +76,11 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="filled" title="Login" cornerStyle="dynamic">
                                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                                            <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
                                                             <action selector="LoginBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OvF-Yd-cPQ"/>
+                                                            <segue destination="TpK-Bp-zN2" kind="show" id="S4W-rm-B3U"/>
                                                         </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u8P-H3-EPC" userLabel="ActionSV">
@@ -146,6 +148,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="956.48854961832058" y="3.5211267605633805"/>
+        </scene>
+        <!--Home Page-->
+        <scene sceneID="PYY-IJ-7cu">
+            <objects>
+                <viewController id="TpK-Bp-zN2" customClass="HomePage" customModule="ScribbleGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="A0L-jQ-oyx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="rdg-YS-T9r" userLabel="BigContainerSV">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="auM-X6-BGR">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="107.33333333333333"/>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="skribbleHeader" translatesAutoresizingMaskIntoConstraints="NO" id="32B-VY-xf2">
+                                        <rect key="frame" x="0.0" y="115.33333333333337" width="393" height="350"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BgG-va-mgI" userLabel="ActionSV">
+                                        <rect key="frame" x="0.0" y="473.33333333333337" width="393" height="40.666666666666629"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPM-4s-XOs" userLabel="Play">
+                                                <rect key="frame" x="163.33333333333334" y="0.0" width="66.666666666666657" height="40.666666666666664"/>
+                                                <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                                                <color key="tintColor" systemColor="opaqueSeparatorColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title=" Play " cornerStyle="capsule">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="baseBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9nb-Si-rDR">
+                                        <rect key="frame" x="0.0" y="522" width="393" height="193"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="9nb-Si-rDR" firstAttribute="height" secondItem="rdg-YS-T9r" secondAttribute="height" multiplier="0.27" id="XuI-Ug-dSa"/>
+                                    <constraint firstItem="auM-X6-BGR" firstAttribute="height" secondItem="rdg-YS-T9r" secondAttribute="height" multiplier="0.15" id="tvF-aH-4aF"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vji-JE-H8M"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rdg-YS-T9r" firstAttribute="top" secondItem="Vji-JE-H8M" secondAttribute="top" id="5f8-gH-v5G"/>
+                            <constraint firstItem="Vji-JE-H8M" firstAttribute="trailing" secondItem="rdg-YS-T9r" secondAttribute="trailing" id="Cc2-g6-YtW"/>
+                            <constraint firstItem="rdg-YS-T9r" firstAttribute="leading" secondItem="Vji-JE-H8M" secondAttribute="leading" id="e2k-6P-DW3"/>
+                            <constraint firstItem="Vji-JE-H8M" firstAttribute="bottom" secondItem="rdg-YS-T9r" secondAttribute="bottom" id="xg0-JP-YrS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RZG-AT-1tj"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7uq-4v-PAh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="968" y="811"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="KXd-Af-zeV">
@@ -252,6 +312,7 @@
     </scenes>
     <resources>
         <image name="Background" width="338" height="671"/>
+        <image name="skribbleHeader" width="700" height="350"/>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
