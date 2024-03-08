@@ -9,13 +9,56 @@ import UIKit
 
 class RegistrationVC: UIViewController {
 
+    @IBOutlet weak var firstLBL: UITextField!
+    
+    @IBOutlet weak var lastLBL: UITextField!
+    
+    
+    @IBOutlet weak var userLBL: UITextField!
+    
+    
+    @IBOutlet weak var PasswordLBL: UITextField!
+    
+    
+    @IBOutlet weak var confirmLBL: UITextField!
+    
+    @IBOutlet weak var signupBT: UIButton!
+    
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    @IBAction func firstname(_ sender: UITextField) {
+    }
     
-
+    
+    @IBAction func lastname(_ sender: UITextField) {
+    }
+    
+    
+    @IBAction func user(_ sender: UITextField) {
+    }
+    
+    @IBAction func password(_ sender: UITextField) {
+    }
+    
+    @IBAction func confirm(_ sender: UITextField) {
+    }
+    
+    @IBAction func signup(_ sender: UIButton) {
+    }
+    
+    
+    
+    
+    
     /*
     // MARK: - Navigation
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42831E792B9B5D9200378C94 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42831E782B9B5D9200378C94 /* RegistrationVC.swift */; };
 		AA5135A92B9AE22A005EECA1 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5135A82B9AE22A005EECA1 /* HomePage.swift */; };
 		AAA46A292B870F200099BED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA46A282B870F200099BED3 /* AppDelegate.swift */; };
 		AAA46A2B2B870F200099BED3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA46A2A2B870F200099BED3 /* SceneDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42831E782B9B5D9200378C94 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		AA5135A82B9AE22A005EECA1 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		AAA46A252B870F200099BED3 /* ScribbleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScribbleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAA46A282B870F200099BED3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				AAA46A402B8716720099BED3 /* Misc.swift */,
 				AAC7575E2B9A6830002084F1 /* MatchManager.swift */,
 				AA5135A82B9AE22A005EECA1 /* HomePage.swift */,
+				42831E782B9B5D9200378C94 /* RegistrationVC.swift */,
 			);
 			path = ScribbleGame;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				AAA46A412B8716720099BED3 /* Misc.swift in Sources */,
 				AAA46A292B870F200099BED3 /* AppDelegate.swift in Sources */,
 				AAC7575F2B9A6830002084F1 /* MatchManager.swift in Sources */,
+				42831E792B9B5D9200378C94 /* RegistrationVC.swift in Sources */,
 				AAA46A2B2B870F200099BED3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

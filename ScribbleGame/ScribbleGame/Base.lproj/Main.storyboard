@@ -207,10 +207,10 @@
             </objects>
             <point key="canvasLocation" x="968" y="811"/>
         </scene>
-        <!--View Controller-->
+        <!--RegistrationVC-->
         <scene sceneID="KXd-Af-zeV">
             <objects>
-                <viewController id="hPa-Qw-jvu" sceneMemberID="viewController">
+                <viewController id="hPa-Qw-jvu" customClass="RegistrationVC" customModule="ScribbleGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Rc-sz-W15">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -218,74 +218,122 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="DjK-zg-SfD">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter username or email address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eLb-aj-QMM">
-                                <rect key="frame" x="80" y="442" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="username"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UaF-mj-Ekv">
-                                <rect key="frame" x="80" y="505" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v1s-BR-AVv">
-                                <rect key="frame" x="80" y="378" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="family-name"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KOj-Vq-Vsc">
-                                <rect key="frame" x="80" y="567" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SCRIBBLE GAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji9-NW-aKp">
-                                <rect key="frame" x="80" y="120" width="237" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="31"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="SIGN UP !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH8-kH-OUh">
-                                <rect key="frame" x="154" y="239" width="107" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="24"/>
-                                <color key="textColor" systemColor="systemYellowColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Firstname" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwt-36-Tnj">
-                                <rect key="frame" x="80" y="321" width="97" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" textContentType="given-name"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3B4-8Q-iFF">
-                                <rect key="frame" x="154" y="632" width="90" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="SIGN UP"/>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-Already have an account?SIGN UP-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcq-ib-Eie">
-                                <rect key="frame" x="69" y="728" width="276" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Nri-E2-mzB">
+                                <rect key="frame" x="20" y="79" width="353" height="753"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="edo-cC-sOi">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="376.66666666666669"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SCRIBBLE GAME" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ji9-NW-aKp">
+                                                <rect key="frame" x="0.0" y="0.0" width="353" height="103"/>
+                                                <fontDescription key="fontDescription" name="Thonburi" family="Thonburi" pointSize="31"/>
+                                                <color key="textColor" systemColor="systemYellowColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="SIGN UP !" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iH8-kH-OUh">
+                                                <rect key="frame" x="0.0" y="111" width="353" height="31.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="Thonburi-Bold" family="Thonburi" pointSize="24"/>
+                                                <color key="textColor" systemColor="systemYellowColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Pmg-7V-i0B">
+                                                <rect key="frame" x="0.0" y="150.66666666666663" width="353" height="226"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="CZS-Jg-OP3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="183.66666666666666"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Firstname" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwt-36-Tnj">
+                                                                <rect key="frame" x="0.0" y="0.0" width="353" height="30.333333333333332"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="given-name"/>
+                                                                <connections>
+                                                                    <action selector="firstname:" destination="hPa-Qw-jvu" eventType="editingDidEnd" id="EXV-pV-FTh"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ENTER LAST NAME" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mSz-5I-XKg">
+                                                                <rect key="frame" x="0.0" y="38.333333333333343" width="353" height="30.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="lastname:" destination="hPa-Qw-jvu" eventType="editingDidEnd" id="osK-ap-9Zy"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter username or email address" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eLb-aj-QMM">
+                                                                <rect key="frame" x="0.0" y="76.666666666666657" width="353" height="30.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                                                <connections>
+                                                                    <action selector="user:" destination="hPa-Qw-jvu" eventType="editingDidEnd" id="qhU-Fz-B9c"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UaF-mj-Ekv">
+                                                                <rect key="frame" x="0.0" y="115.00000000000001" width="353" height="30.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                                <connections>
+                                                                    <action selector="password:" destination="hPa-Qw-jvu" eventType="editingDidEnd" id="gjj-zR-2KF"/>
+                                                                </connections>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm your password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KOj-Vq-Vsc">
+                                                                <rect key="frame" x="0.0" y="153.33333333333334" width="353" height="30.333333333333343"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                                <textInputTraits key="textInputTraits"/>
+                                                                <connections>
+                                                                    <action selector="confirm:" destination="hPa-Qw-jvu" eventType="editingDidEnd" id="Y2n-qO-WNO"/>
+                                                                </connections>
+                                                            </textField>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3B4-8Q-iFF">
+                                                        <rect key="frame" x="0.0" y="191.66666666666666" width="353" height="34.333333333333343"/>
+                                                        <state key="normal" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="SIGN UP"/>
+                                                        <connections>
+                                                            <action selector="signup:" destination="hPa-Qw-jvu" eventType="touchUpInside" id="8hX-Ju-48B"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-Already have an account?LOG IN-" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcq-ib-Eie">
+                                        <rect key="frame" x="0.0" y="384.66666666666674" width="353" height="368.33333333333326"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="edo-cC-sOi" firstAttribute="height" secondItem="Nri-E2-mzB" secondAttribute="height" multiplier="0.5" id="BsQ-zP-l00"/>
+                                    <constraint firstItem="Pmg-7V-i0B" firstAttribute="height" secondItem="Nri-E2-mzB" secondAttribute="height" multiplier="0.3" id="CUN-tz-TVV"/>
+                                    <constraint firstItem="pcq-ib-Eie" firstAttribute="leading" secondItem="Nri-E2-mzB" secondAttribute="leading" id="IW1-BZ-ta0"/>
+                                    <constraint firstAttribute="trailing" secondItem="pcq-ib-Eie" secondAttribute="trailing" id="Nhg-t7-aHp"/>
+                                    <constraint firstAttribute="bottom" secondItem="pcq-ib-Eie" secondAttribute="bottom" constant="10" id="SQI-1x-0wc"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GRE-kV-OYc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Nri-E2-mzB" firstAttribute="leading" secondItem="GRE-kV-OYc" secondAttribute="leading" constant="20" id="Dpd-Az-dWn"/>
                             <constraint firstItem="DjK-zg-SfD" firstAttribute="trailing" secondItem="GRE-kV-OYc" secondAttribute="trailing" id="HXI-Qx-TIf"/>
+                            <constraint firstItem="GRE-kV-OYc" firstAttribute="trailing" secondItem="Nri-E2-mzB" secondAttribute="trailing" constant="20" id="QTB-Ag-ZWl"/>
                             <constraint firstItem="DjK-zg-SfD" firstAttribute="leading" secondItem="GRE-kV-OYc" secondAttribute="leading" id="RMg-S9-zWs"/>
                             <constraint firstAttribute="bottom" secondItem="DjK-zg-SfD" secondAttribute="bottom" id="XfA-WY-g3a"/>
                             <constraint firstItem="DjK-zg-SfD" firstAttribute="top" secondItem="6Rc-sz-W15" secondAttribute="top" id="aFC-61-oja"/>
+                            <constraint firstItem="Nri-E2-mzB" firstAttribute="top" secondItem="GRE-kV-OYc" secondAttribute="top" constant="20" id="kHa-kg-0wu"/>
+                            <constraint firstAttribute="bottom" secondItem="Nri-E2-mzB" secondAttribute="bottom" constant="20" id="xyJ-Q6-daE"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bA6-RT-hcg"/>
+                    <connections>
+                        <outlet property="PasswordLBL" destination="UaF-mj-Ekv" id="Y45-ca-M1O"/>
+                        <outlet property="confirmLBL" destination="KOj-Vq-Vsc" id="tSC-z9-yDv"/>
+                        <outlet property="firstLBL" destination="fwt-36-Tnj" id="lct-bb-ak8"/>
+                        <outlet property="lastLBL" destination="mSz-5I-XKg" id="dEP-fw-Tt3"/>
+                        <outlet property="signupBT" destination="3B4-8Q-iFF" id="gDH-jk-Gxt"/>
+                        <outlet property="userLBL" destination="eLb-aj-QMM" id="v7n-K3-5OR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5D-7M-qeD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
