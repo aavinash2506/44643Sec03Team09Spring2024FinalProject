@@ -19,6 +19,7 @@
 		AAC7575C2B9A5BF2002084F1 /* skribbleGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = AAC7575B2B9A5BF2002084F1 /* skribbleGIF.gif */; };
 		AAC7575F2B9A6830002084F1 /* MatchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC7575E2B9A6830002084F1 /* MatchManager.swift */; };
 		FD7080752B8952DE00FA063D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FD7080742B8952DE00FA063D /* Lottie */; };
+		FD911F622BB5043C002C6395 /* Menuview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD911F612BB5043C002C6395 /* Menuview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		AAA46A402B8716720099BED3 /* Misc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
 		AAC7575B2B9A5BF2002084F1 /* skribbleGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = skribbleGIF.gif; sourceTree = "<group>"; };
 		AAC7575E2B9A6830002084F1 /* MatchManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchManager.swift; sourceTree = "<group>"; };
+		FD911F612BB5043C002C6395 /* Menuview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menuview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				AAA46A362B870F220099BED3 /* Info.plist */,
 				AAA46A402B8716720099BED3 /* Misc.swift */,
 				AAC7575E2B9A6830002084F1 /* MatchManager.swift */,
+				FD911F612BB5043C002C6395 /* Menuview.swift */,
 				AA5135A82B9AE22A005EECA1 /* HomePage.swift */,
 				42831E782B9B5D9200378C94 /* RegistrationVC.swift */,
 			);
@@ -172,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AAA46A2D2B870F200099BED3 /* ViewController.swift in Sources */,
+				FD911F622BB5043C002C6395 /* Menuview.swift in Sources */,
 				AA5135A92B9AE22A005EECA1 /* HomePage.swift in Sources */,
 				AAA46A412B8716720099BED3 /* Misc.swift in Sources */,
 				AAA46A292B870F200099BED3 /* AppDelegate.swift in Sources */,
