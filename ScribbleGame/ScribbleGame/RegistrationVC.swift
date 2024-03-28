@@ -54,6 +54,10 @@ class RegistrationVC: UIViewController {
     }
     
     @IBAction func signup(_ sender: UIButton) {
+        guard let firstName = firstLBL.text, !firstName.isEmpty else {
+            firstLBL.placeholder =  "Please enter your first name."
+                    return
+                }
     }
     
     
