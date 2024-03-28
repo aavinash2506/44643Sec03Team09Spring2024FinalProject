@@ -18,9 +18,23 @@ class LoginVC: UIViewController {
     @IBOutlet weak var LoginBTN: UIButton!
     
     @IBAction func LoginBTN(_ sender: UIButton) {
+        guard let username = self.usernameTF.text, !username.isEmpty, LoginVC.isUsernameValid(username)
+        else{
+            self.usernameTF.layer.borderColor = UIColor.red.cgColor
+            self.usernameTF.layer.borderWidth = 1
+            return
+        }
+        self.usernameTF.layer.borderColor = UIColor.black.cgColor
+        guard let password = self.passwordTF.text, !password.isEmpty
+        else{
+            self.passwordTF.layer.borderColor = UIColor.red.cgColor
+            self.usernameTF.layer.borderWidth = 1
+            return
+        }
+        self.passwordTF.layer.borderColor = UIColor.black.cgColor
         
+        self.performSegue(withIdentifier: "home", sender: sender)
     }
-    
     
     @IBOutlet weak var scribbleLAV: LottieAnimationView!{
         didSet{
@@ -43,20 +57,26 @@ class LoginVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            switch(segue.identifier){
-            case "home" :
-                guard let destinationVC = segue.destination as? HomePage
-                else{
-                    return
-                }
-            case "signup" :
-                guard let destinationVC = segue.destination as? RegistrationVC
-                else{
-                    return
-                }
-            default :
-                break
+        switch(segue.identifier){
+        case "home" :
+            guard let destinationVC = segue.destination as? HomePage
+            else{
+                return
             }
+        case "signup" :
+            guard let destinationVC = segue.destination as? RegistrationVC
+            else{
+                return
+            }
+        default :
+            break
         }
+    }
+    
+    static func isUsernameValid(_ email: String) -> Bool {
+        let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+        let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
+        return emailPred.evaluate(with: email)
+    }
 }
 
