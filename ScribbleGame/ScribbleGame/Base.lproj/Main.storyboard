@@ -79,7 +79,7 @@
                                                             <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </buttonConfiguration>
                                                         <connections>
-                                                            <action selector="LoginBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OvF-Yd-cPQ"/>
+                                                            <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OvF-Yd-cPQ"/>
                                                         </connections>
                                                     </button>
                                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="u8P-H3-EPC" userLabel="ActionSV">
@@ -97,6 +97,9 @@
                                                                 <buttonConfiguration key="configuration" style="plain" title="create account">
                                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="signUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ibr-kb-6XN"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                     </stackView>
@@ -139,12 +142,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="c67-hF-nht"/>
                     <connections>
-                        <outlet property="LoginBTN" destination="lTW-JS-cUf" id="tgk-IM-7d5"/>
+                        <outlet property="loginBTN" destination="lTW-JS-cUf" id="tgk-IM-7d5"/>
                         <outlet property="passwordTF" destination="wyf-fb-jPc" id="9VI-iF-F5d"/>
                         <outlet property="scribbleLAV" destination="MwS-JD-nHz" id="utD-kY-dG7"/>
                         <outlet property="usernameTF" destination="eL5-Z8-FB9" id="pMo-1O-hIZ"/>
-                        <segue destination="hPa-Qw-jvu" kind="show" identifier="signup" id="rAY-It-Ujy"/>
                         <segue destination="TpK-Bp-zN2" kind="show" identifier="home" id="yuU-pV-2G9"/>
+                        <segue destination="hPa-Qw-jvu" kind="show" identifier="signup" id="m97-vu-aYI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -238,9 +241,6 @@
                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="given-name"/>
-                                                <connections>
-                                                    <action selector="firstname:" destination="hPa-Qw-jvu" eventType="editingDidEnd" id="EXV-pV-FTh"/>
-                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -262,9 +262,6 @@
                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="lastname:" destination="hPa-Qw-jvu" eventType="editingDidEnd" id="osK-ap-9Zy"/>
-                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -286,9 +283,6 @@
                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" textContentType="username"/>
-                                                <connections>
-                                                    <action selector="user:" destination="hPa-Qw-jvu" eventType="editingDidEnd" id="qhU-Fz-B9c"/>
-                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -310,9 +304,6 @@
                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
-                                                <connections>
-                                                    <action selector="password:" destination="hPa-Qw-jvu" eventType="editingDidEnd" id="gjj-zR-2KF"/>
-                                                </connections>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -333,10 +324,7 @@
                                                 <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 <color key="tintColor" systemColor="opaqueSeparatorColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                                <connections>
-                                                    <action selector="confirm:" destination="hPa-Qw-jvu" eventType="editingDidEnd" id="Y2n-qO-WNO"/>
-                                                </connections>
+                                                <textInputTraits key="textInputTraits" textContentType="password"/>
                                             </textField>
                                         </subviews>
                                         <constraints>
@@ -362,6 +350,9 @@
                                                     <color key="baseForegroundColor" systemColor="labelColor"/>
                                                     <color key="baseBackgroundColor" systemColor="opaqueSeparatorColor"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="signUp:" destination="hPa-Qw-jvu" eventType="touchUpInside" id="o4i-gB-Pam"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -394,11 +385,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="efd-00-nsI"/>
                     <connections>
-                        <outlet property="PasswordLBL" destination="UaF-mj-Ekv" id="Y45-ca-M1O"/>
-                        <outlet property="confirmLBL" destination="KOj-Vq-Vsc" id="tSC-z9-yDv"/>
-                        <outlet property="firstLBL" destination="fwt-36-Tnj" id="lct-bb-ak8"/>
-                        <outlet property="lastLBL" destination="mSz-5I-XKg" id="dEP-fw-Tt3"/>
-                        <outlet property="userLBL" destination="eLb-aj-QMM" id="v7n-K3-5OR"/>
+                        <outlet property="confirmPasswordTF" destination="KOj-Vq-Vsc" id="tSC-z9-yDv"/>
+                        <outlet property="emailTF" destination="eLb-aj-QMM" id="v7n-K3-5OR"/>
+                        <outlet property="firstNameTF" destination="fwt-36-Tnj" id="lct-bb-ak8"/>
+                        <outlet property="lastNameTF" destination="mSz-5I-XKg" id="dEP-fw-Tt3"/>
+                        <outlet property="passwordTF" destination="UaF-mj-Ekv" id="Y45-ca-M1O"/>
+                        <outlet property="signUpBTN" destination="nCu-8D-BZF" id="3HT-px-KOm"/>
+                        <segue destination="TpK-Bp-zN2" kind="show" identifier="home" id="EJS-bB-fHZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e5D-7M-qeD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -458,6 +451,9 @@
             <point key="canvasLocation" x="29.770992366412212" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="EJS-bB-fHZ"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="GameOver 1" width="462" height="259"/>
         <image name="skribbleHeader" width="700" height="350"/>

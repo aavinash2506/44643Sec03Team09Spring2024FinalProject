@@ -10,14 +10,11 @@ import Lottie
 
 class LoginVC: UIViewController {
     
-    
     @IBOutlet weak var usernameTF: UITextField!
-    
     @IBOutlet weak var passwordTF: UITextField!
+    @IBOutlet weak var loginBTN: UIButton!
     
-    @IBOutlet weak var LoginBTN: UIButton!
-    
-    @IBAction func LoginBTN(_ sender: UIButton) {
+    @IBAction func login(_ sender: UIButton) {
         guard let username = self.usernameTF.text, !username.isEmpty, LoginVC.isUsernameValid(username)
         else{
             self.usernameTF.layer.borderColor = UIColor.red.cgColor
@@ -34,6 +31,10 @@ class LoginVC: UIViewController {
         self.passwordTF.layer.borderColor = UIColor.black.cgColor
         
         self.performSegue(withIdentifier: "home", sender: sender)
+    }
+    
+    @IBAction func signUp(_ sender: UIButton){
+        self.performSegue(withIdentifier: "signup", sender: sender)
     }
     
     @IBOutlet weak var scribbleLAV: LottieAnimationView!{
