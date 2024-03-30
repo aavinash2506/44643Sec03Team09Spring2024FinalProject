@@ -544,10 +544,10 @@
             </objects>
             <point key="canvasLocation" x="29.770992366412212" y="3.5211267605633805"/>
         </scene>
-        <!--Forgot PassowordVC-->
+        <!--ForgotpasswordVC-->
         <scene sceneID="FQL-TG-f5R">
             <objects>
-                <viewController id="pRe-kf-503" customClass="Forgot_PassowordVC" customModule="ScribbleGame" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pRe-kf-503" customClass="ForgotpasswordVC" customModule="ScribbleGame" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yEV-bZ-a4Q">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -687,6 +687,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kKu-PE-YZp"/>
+                    <connections>
+                        <outlet property="CancelBT" destination="jn4-qv-jUf" id="16D-4r-8Fo"/>
+                        <outlet property="ConfirmpasswordTF" destination="cqO-4g-mZK" id="BDa-hw-mIr"/>
+                        <outlet property="EmailTF" destination="2D4-Et-adm" id="Hid-S6-gK4"/>
+                        <outlet property="newpasswordTF" destination="47Z-cU-Ght" id="jC7-Gj-BEe"/>
+                        <outlet property="passwordBT" destination="jlJ-JS-17Z" id="3Kt-gR-Xc7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="whc-xy-MMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -694,7 +701,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yuU-pV-2G9"/>
+        <segue reference="EJS-bB-fHZ"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="GameOver 1" width="462" height="259"/>

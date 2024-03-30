@@ -1,18 +1,27 @@
 //
-//  Forgot PassowordVC.swift
+//  ForgotpasswordVC.swift
 //  ScribbleGame
 //
-//  Created by Avinash on 3/28/24.
+//  Created by Venkata Sai Sandeep Nirujogi on 3/29/24.
 //
 
 import UIKit
 
-class Forgot_PassowordVC: UIViewController {
+class ForgotpasswordVC: UIViewController {
 
+    @IBOutlet weak var EmailTF: UITextField!
+    
+    @IBOutlet weak var newpasswordTF: UITextField!
+    
+    
+    @IBOutlet weak var ConfirmpasswordTF: UITextField!
+    
+    @IBOutlet weak var passwordBT: UIButton!
+    
+    @IBOutlet weak var CancelBT: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "Background")!).withAlphaComponent(0.5)
-        
 
         // Do any additional setup after loading the view.
     }

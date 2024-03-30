@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		29FDFE1E2BB6650100D052A8 /* Forgot PassowordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FDFE1D2BB6650100D052A8 /* Forgot PassowordVC.swift */; };
+		4235F2E02BB7A7CE00FCAB2D /* ForgotpasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4235F2DF2BB7A7CE00FCAB2D /* ForgotpasswordVC.swift */; };
 		42831E792B9B5D9200378C94 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42831E782B9B5D9200378C94 /* RegistrationVC.swift */; };
 		AA5135A92B9AE22A005EECA1 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA5135A82B9AE22A005EECA1 /* HomePage.swift */; };
 		AAA46A292B870F200099BED3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA46A282B870F200099BED3 /* AppDelegate.swift */; };
@@ -25,7 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		29FDFE1D2BB6650100D052A8 /* Forgot PassowordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Forgot PassowordVC.swift"; sourceTree = "<group>"; };
+		4235F2DF2BB7A7CE00FCAB2D /* ForgotpasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotpasswordVC.swift; sourceTree = "<group>"; };
 		42831E782B9B5D9200378C94 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		AA5135A82B9AE22A005EECA1 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
 		AAA46A252B870F200099BED3 /* ScribbleGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScribbleGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +78,7 @@
 				AAA46A2A2B870F200099BED3 /* SceneDelegate.swift */,
 				AAA46A2C2B870F200099BED3 /* LoginVC.swift */,
 				AAA46A2E2B870F200099BED3 /* Main.storyboard */,
+				4235F2DF2BB7A7CE00FCAB2D /* ForgotpasswordVC.swift */,
 				FD5D772B2BB652F9005D9571 /* GameOverVC.swift */,
 				AAA46A312B870F220099BED3 /* Assets.xcassets */,
 				AAC7575D2B9A5BF9002084F1 /* GIFs */,
@@ -88,7 +89,6 @@
 				FD911F652BB52414002C6395 /* Menuview.swift */,
 				AA5135A82B9AE22A005EECA1 /* HomePage.swift */,
 				42831E782B9B5D9200378C94 /* RegistrationVC.swift */,
-				29FDFE1D2BB6650100D052A8 /* Forgot PassowordVC.swift */,
 			);
 			path = ScribbleGame;
 			sourceTree = "<group>";
@@ -183,6 +183,7 @@
 			files = (
 				AAA46A2D2B870F200099BED3 /* LoginVC.swift in Sources */,
 				FD911F662BB52414002C6395 /* Menuview.swift in Sources */,
+				4235F2E02BB7A7CE00FCAB2D /* ForgotpasswordVC.swift in Sources */,
 				AA5135A92B9AE22A005EECA1 /* HomePage.swift in Sources */,
 				AAA46A412B8716720099BED3 /* Misc.swift in Sources */,
 				AAA46A292B870F200099BED3 /* AppDelegate.swift in Sources */,
@@ -190,7 +191,6 @@
 				42831E792B9B5D9200378C94 /* RegistrationVC.swift in Sources */,
 				AAA46A2B2B870F200099BED3 /* SceneDelegate.swift in Sources */,
 				FD5D772C2BB652F9005D9571 /* GameOverVC.swift in Sources */,
-				29FDFE1E2BB6650100D052A8 /* Forgot PassowordVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
