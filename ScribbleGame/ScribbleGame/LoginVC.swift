@@ -30,6 +30,16 @@ class LoginVC: UIViewController {
         }
         self.passwordTF.layer.borderColor = UIColor.black.cgColor
         
+        Task{
+            do{
+                try await AuthenticationManager.shared.signIn(email: username, password: password)
+            }
+            catch{
+                print(error.localizedDescription)
+                return
+            }
+        }
+        
         self.performSegue(withIdentifier: "home", sender: sender)
     }
     
