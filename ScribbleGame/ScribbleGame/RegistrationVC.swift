@@ -63,6 +63,16 @@ class RegistrationVC: UIViewController {
             return
         }
         self.confirmPasswordTF.layer.borderColor = UIColor.black.cgColor
+        
+        Task{
+            do {
+                try await AuthenticationManager.shared.createUser(email: email, password: password)
+            }
+            catch {
+                print(error.localizedDescription)
+            }
+        }
+        
         self.performSegue(withIdentifier: "home", sender: sender)
     }
     

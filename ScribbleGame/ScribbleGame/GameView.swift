@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GameView: View {
     @ObservedObject var matchManager: MatchManager
-    @State var drawingGuess =""
+    @State var drawingGuess = ""
     @State var eraserEnable = ""
     func makeGuess() {
         
@@ -17,16 +17,16 @@ struct GameView: View {
     var body: some View {
         ZStack{
             GeometryReader{ _ in
-                Image(MatchManager.currentlyDrawing ? "drawBg" :
-                        "guessrBg")
-                .resizable()
-                .scaledToFit()
-                .ignoresSafeArea()
-                .scaleEffect(1.1)
-                VStack{
-                    topBar
-                    
-                    }
+//                Image(MatchManager.currentlyDrawing ? "drawBg" :
+//                        "guessrBg")
+//                .resizable()
+//                .scaledToFit()
+//                .ignoresSafeArea()
+//                .scaleEffect(1.1)
+//                VStack{
+//                    .topBar
+//                    
+//                    }
                     
                 }
             }
