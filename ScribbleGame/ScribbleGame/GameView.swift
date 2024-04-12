@@ -30,8 +30,3 @@ struct GameView: View {
         }
     }
     
-    struct GameView_Previews: PreviewProvider{
-        static var previews: some view {
-        GameView(matchManager: MatchManager())
-    }
-}
