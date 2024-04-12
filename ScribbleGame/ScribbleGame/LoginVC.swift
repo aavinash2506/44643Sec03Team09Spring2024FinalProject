@@ -15,6 +15,15 @@ class LoginVC: UIViewController {
     @IBOutlet weak var loginBTN: UIButton!
     
     @IBAction func login(_ sender: UIButton) {
+        guard let username = self.usernameTF.text, !username.isEmpty,
+                      let password = self.passwordTF.text, !password.isEmpty
+                else {
+                    return
+                }
+        
+        
+        
+                
         guard let username = self.usernameTF.text, !username.isEmpty, LoginVC.isUsernameValid(username)
         else{
             self.usernameTF.layer.borderColor = UIColor.red.cgColor
@@ -89,5 +98,11 @@ class LoginVC: UIViewController {
         let emailPred = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailPred.evaluate(with: email)
     }
+    func showAlert(message: String) {
+            let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    
 }
 
