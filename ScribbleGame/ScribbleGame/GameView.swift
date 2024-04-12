@@ -24,9 +24,13 @@ struct GameView: View {
                 .ignoresSafeArea()
                 .scaleEffect(1.1)
                 VStack{
+                    topBar
+                    
+                    }
                     
                 }
             }
         }
     }
+    
     

@@ -36,6 +36,7 @@
 		FD7080752B8952DE00FA063D /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FD7080742B8952DE00FA063D /* Lottie */; };
 		FD911F662BB52414002C6395 /* Menuview.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD911F652BB52414002C6395 /* Menuview.swift */; };
 		FDADC96E2BC912F000654BA8 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADC96D2BC912F000654BA8 /* GameView.swift */; };
+		FDADC9702BC953F700654BA8 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDADC96F2BC953F700654BA8 /* DrawingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		FD5D772B2BB652F9005D9571 /* GameOverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverVC.swift; sourceTree = "<group>"; };
 		FD911F652BB52414002C6395 /* Menuview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menuview.swift; sourceTree = "<group>"; };
 		FDADC96D2BC912F000654BA8 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		FDADC96F2BC953F700654BA8 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				AAA46A2C2B870F200099BED3 /* LoginVC.swift */,
 				AAA46A2E2B870F200099BED3 /* Main.storyboard */,
 				FDADC96D2BC912F000654BA8 /* GameView.swift */,
+				FDADC96F2BC953F700654BA8 /* DrawingView.swift */,
 				FD5D772B2BB652F9005D9571 /* GameOverVC.swift */,
 				AAA46A312B870F220099BED3 /* Assets.xcassets */,
 				AAC7575D2B9A5BF9002084F1 /* GIFs */,
@@ -227,6 +230,7 @@
 				AAA46A2D2B870F200099BED3 /* LoginVC.swift in Sources */,
 				AAF64DF72BC8D2C700647485 /* AuthenticationModel.swift in Sources */,
 				FD911F662BB52414002C6395 /* Menuview.swift in Sources */,
+				FDADC9702BC953F700654BA8 /* DrawingView.swift in Sources */,
 				AA5135A92B9AE22A005EECA1 /* HomePage.swift in Sources */,
 				AAA46A412B8716720099BED3 /* Misc.swift in Sources */,
 				FDADC96E2BC912F000654BA8 /* GameView.swift in Sources */,
