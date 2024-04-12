@@ -31,3 +31,5 @@ The scribble game targets young adults and teenagers highly engaged with mobile 
 - Created the UI for Registration page
 - Created the UI for Home page
 - Created the UI for Game over page
+- Created Authentication Model
+- Implemented Login functionality
