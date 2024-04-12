@@ -21,36 +21,44 @@ class LoginVC: UIViewController {
                     return
                 }
         
-        
+        if usernameTF.text == "" && passwordTF.text == "password" {
+                   performSegue(withIdentifier: "segueToActionItems", sender: nil)
+               } else {
+                   // Show alert for invalid credentials
+                   let alert = UIAlertController(title: "Invalid Credentials", message: "Please enter correct username and password.", preferredStyle: .alert)
+                   alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                   present(alert, animated: true, completion: nil)
+               }
+           }
         
                 
-        guard let username = self.usernameTF.text, !username.isEmpty, LoginVC.isUsernameValid(username)
-        else{
-            self.usernameTF.layer.borderColor = UIColor.red.cgColor
-            self.usernameTF.layer.borderWidth = 1
-            return
-        }
-        self.usernameTF.layer.borderColor = UIColor.black.cgColor
-        guard let password = self.passwordTF.text, !password.isEmpty
-        else{
-            self.passwordTF.layer.borderColor = UIColor.red.cgColor
-            self.usernameTF.layer.borderWidth = 1
-            return
-        }
-        self.passwordTF.layer.borderColor = UIColor.black.cgColor
-        
-        Task{
-            do{
-                try await AuthenticationManager.shared.signIn(email: username, password: password)
-            }
-            catch{
-                print(error.localizedDescription)
-                return
-            }
-        }
-        
-        self.performSegue(withIdentifier: "home", sender: sender)
-    }
+//        guard let username = self.usernameTF.text, !username.isEmpty, LoginVC.isUsernameValid(username)
+//        else{
+//            self.usernameTF.layer.borderColor = UIColor.red.cgColor
+//            self.usernameTF.layer.borderWidth = 1
+//            return
+//        }
+//        self.usernameTF.layer.borderColor = UIColor.black.cgColor
+//        guard let password = self.passwordTF.text, !password.isEmpty
+//        else{
+//            self.passwordTF.layer.borderColor = UIColor.red.cgColor
+//            self.usernameTF.layer.borderWidth = 1
+//            return
+//        }
+//        self.passwordTF.layer.borderColor = UIColor.black.cgColor
+//        
+//        Task{
+//            do{
+//                try await AuthenticationManager.shared.signIn(email: username, password: password)
+//            }
+//            catch{
+//                print(error.localizedDescription)
+//                return
+//            }
+//        }
+//        
+//        self.performSegue(withIdentifier: "home", sender: sender)
+//    }
     
     @IBAction func signUp(_ sender: UIButton){
         self.performSegue(withIdentifier: "signup", sender: sender)
