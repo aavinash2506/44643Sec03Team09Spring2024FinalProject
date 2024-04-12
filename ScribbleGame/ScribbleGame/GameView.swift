@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct GameView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    @ObservedObject var matchManager: MatchManager
+    @State var drawingGuess =""
+    @State var eraserEnable = ""
+    func makeGuess() {
+        
     }
-}
-
-#Preview {
-    GameView()
+    var body: some View {
+        ZStack{
+            GeometryReader{ _ in
+                Image(MatchManager.currentlyDrawing ? "drawBg" :
+                        "guessrBg")
+                .resizable()
+                .scaledToFit()
+                .ignoresSafeArea()
+                .scaleEffect(1.1)
+                VStack{
+                    
+                }
+            }
+        }
+    }
+    
+    struct GameView_Previews: PreviewProvider{
+        static var previews: some view {
+        GameView(matchManager: MatchManager())
+    }
 }
