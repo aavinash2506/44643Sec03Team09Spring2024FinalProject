@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		142732142BC9E63800C0674E /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 142732132BC9E63800C0674E /* SDWebImage */; };
+		142732162BC9E63800C0674E /* SDWebImageMapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 142732152BC9E63800C0674E /* SDWebImageMapKit */; };
 		42831E792B9B5D9200378C94 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42831E782B9B5D9200378C94 /* RegistrationVC.swift */; };
 		42A8BB872BC9D652007A60AA /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 42A8BB862BC9D652007A60AA /* FirebaseAnalytics */; };
 		42A8BB892BC9D652007A60AA /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 42A8BB882BC9D652007A60AA /* FirebaseAnalyticsOnDeviceConversion */; };
@@ -88,6 +90,7 @@
 				42A8BB962BC9D7C3007A60AA /* FirebaseAuthCombine-Community in Frameworks */,
 				42A8BBA22BC9D7C3007A60AA /* FirebaseFirestoreCombine-Community in Frameworks */,
 				42A8BB8B2BC9D652007A60AA /* FirebaseAnalyticsSwift in Frameworks */,
+				142732142BC9E63800C0674E /* SDWebImage in Frameworks */,
 				42A8BB8D2BC9D652007A60AA /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 				42A8BB872BC9D652007A60AA /* FirebaseAnalytics in Frameworks */,
 				42A8BBB22BC9D7C3007A60AA /* FirebaseMLModelDownloader in Frameworks */,
@@ -96,6 +99,7 @@
 				42A8BB8F2BC9D652007A60AA /* FirebaseAppCheck in Frameworks */,
 				42A8BBAA2BC9D7C3007A60AA /* FirebaseInAppMessaging-Beta in Frameworks */,
 				42A8BBB42BC9D7C3007A60AA /* FirebasePerformance in Frameworks */,
+				142732162BC9E63800C0674E /* SDWebImageMapKit in Frameworks */,
 				42A8BBA82BC9D7C3007A60AA /* FirebaseFunctionsCombine-Community in Frameworks */,
 				42A8BB982BC9D7C3007A60AA /* FirebaseCrashlytics in Frameworks */,
 				42A8BBAE2BC9D7C3007A60AA /* FirebaseInstallations in Frameworks */,
@@ -218,6 +222,8 @@
 				42A8BBB72BC9D7C3007A60AA /* FirebaseRemoteConfigSwift */,
 				42A8BBB92BC9D7C3007A60AA /* FirebaseStorage */,
 				42A8BBBB2BC9D7C3007A60AA /* FirebaseStorageCombine-Community */,
+				142732132BC9E63800C0674E /* SDWebImage */,
+				142732152BC9E63800C0674E /* SDWebImageMapKit */,
 			);
 			productName = ScribbleGame;
 			productReference = AAA46A252B870F200099BED3 /* ScribbleGame.app */;
@@ -251,6 +257,7 @@
 			packageReferences = (
 				FD7080732B8952DE00FA063D /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				42A8BB852BC9D652007A60AA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				142732122BC9E63800C0674E /* XCRemoteSwiftPackageReference "SDWebImage" */,
 			);
 			productRefGroup = AAA46A262B870F200099BED3 /* Products */;
 			projectDirPath = "";
@@ -525,6 +532,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		142732122BC9E63800C0674E /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.19.1;
+			};
+		};
 		42A8BB852BC9D652007A60AA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -544,6 +559,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		142732132BC9E63800C0674E /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 142732122BC9E63800C0674E /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		142732152BC9E63800C0674E /* SDWebImageMapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 142732122BC9E63800C0674E /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImageMapKit;
+		};
 		42A8BB862BC9D652007A60AA /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 42A8BB852BC9D652007A60AA /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
