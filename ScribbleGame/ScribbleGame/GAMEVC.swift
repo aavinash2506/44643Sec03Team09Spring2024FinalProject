@@ -43,11 +43,11 @@ class GAMEVC: UIViewController {
         }
         
         func startNewGame() {
-            // Reset drawing area and UI elements
+            
             drawingView.clear()
             guessTextField.text = ""
             
-            // Choose a new word
+           
             currentWord = chooseRandomWord()
             wordLabel.text = currentWord
         }
@@ -67,20 +67,20 @@ class GAMEVC: UIViewController {
             }
             
             if guess.lowercased() == currentWord.lowercased() {
-                // Correct guess
+                
                 wordLabel.text = "Congratulations! You guessed it!"
-                // Handle correct guess logic
+                
                 startNewGame()
             } else {
-                // Incorrect guess
+               
                 wordLabel.text = "Try again!"
-                // Handle incorrect guess logic if needed
+                
             }
             
-            // Clear guess text field
+            
             guessTextField.text = ""
             
-            // Dismiss keyboard
+            
             view.endEditing(true)
         }
     }
