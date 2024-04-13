@@ -533,6 +533,9 @@
                         <viewLayoutGuide key="safeArea" id="q2f-tv-bcw"/>
                         <color key="backgroundColor" systemColor="labelColor"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreLBL" destination="Boj-ZJ-MaD" id="Y9N-ij-Lpi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sKZ-ec-GXA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

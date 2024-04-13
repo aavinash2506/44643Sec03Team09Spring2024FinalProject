@@ -8,11 +8,23 @@
 import UIKit
 
 class GameOverVC: UIViewController {
+    
+    @IBOutlet weak var scoreLBL: UILabel!
+    var score: Int = 0
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        scoreLBL.text = "\(score)"
+
 
         // Do any additional setup after loading the view.
+    }
+    func updateScoreLabel(newScore: Int) {
+            score = newScore
+            scoreLBL.text = "\(score)"
+        }
     }
     
 
