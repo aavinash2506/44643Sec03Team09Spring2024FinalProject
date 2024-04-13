@@ -4,15 +4,27 @@
 //
 //  Created by Tejeshreddy on 4/12/24.
 //
+import UIKit
 
-import SwiftUI
-
-struct DrawingView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+protocol DrawingViewDelegate: AnyObject {
+    // Declare any required methods here
 }
 
-#Preview {
-    DrawingView()
+class DrawingView: UIView {
+    
+    weak var delegate: DrawingViewDelegate?
+    
+    var lineWidth: CGFloat = 1.0 // Add a property for line width
+    
+    var lineColor: UIColor = .black // Add a property for line color
+    
+    override func draw(_ rect: CGRect) {
+        // Custom drawing code
+        // Implement your drawing logic here
+        // For example, you could draw lines, shapes, etc.
+    }
+    
+    func clear() {
+        // Implement logic to clear the drawing
+    }
 }
