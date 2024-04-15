@@ -5,9 +5,9 @@
 //  Created by Venkata Sai Sandeep Nirujogi on 4/12/24.
 //
 
-import UIKit
 
 import UIKit
+
 
 class GAMEVC: UIViewController {
     
@@ -77,6 +77,10 @@ class GAMEVC: UIViewController {
                 
             }
             
+            
+            func updateUIView(_ uiView: DrawingView, context: Context) {
+                    // Update any properties or configurations of the DrawingView here if needed
+                }
             
             guessTextField.text = ""
             
