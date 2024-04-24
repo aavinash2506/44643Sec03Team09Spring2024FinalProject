@@ -11,7 +11,7 @@ The scribble game targets young adults and teenagers highly engaged with mobile 
 - **Login Page:** Offers secure authentication for users to access their accounts, ensuring privacy and security.
 - **Drawing Interface:** A feature-rich canvas where drawers can unleash their creativity using various tools and colors.
 - **Guessing Interface:** A real-time guessing area for guessers to type their guesses.
-- **Leaderboards:** Displays rankings of players based on their game performance, encouraging a competitive spirit.
+- **Scoreboard:** Displays rankings of players based on their game performance, encouraging a competitive spirit.
 
 ### Roles and Responisibilities
 - **Vaishnavi Varaganti:** will work on backend
